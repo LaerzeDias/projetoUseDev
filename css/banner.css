@@ -1,0 +1,35 @@
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 12.5%;
+    background-color: var(--cor-links);
+    background-image: url("../assets/banner-background.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.banner__container h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 76px;
+    font-weight: 800;
+    color: var(--cor-destaque-principal);
+    line-height: 91.2px;
+    padding-bottom: 48px;
+    max-width: 80%;
+}
+
+.banner__container h2 span {
+    color: var(--cor-destaque-secundario);
+}
+
+.banner__container button {
+    padding: 16px 24px;
+    color: var(--cor-de-fundo);
+    font-weight: 600;
+    font-family: var(--fonte-texto);
+    line-height: 36px;
+    font-size: 24px;
+    background-color: var(--cor-fundo-botao);
+    border-radius: 32px;
+    border: none;
+} 
