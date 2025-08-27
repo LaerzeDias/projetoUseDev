@@ -37,6 +37,7 @@
     background-color: var(--cor-fundo-botao);
     border-radius: 32px;
     border: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1280px) {
