@@ -44,7 +44,7 @@
     width: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .cabecalho__nav_list {
         grid-template-areas: 
         "logo sobre login perfil carrinho"
