@@ -1,0 +1,97 @@
+.rodape {
+    padding: 60px 11.46%;
+    background-color: var(--cor-links);
+    color: var(--cor-texto)
+}
+
+.rodape__linha {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+}
+
+.rodape__linha:last-child {
+    border-top: 1.5px solid var(--cor-destaque-secundario);
+    padding-top: 32px;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+}
+
+.rodape__logo p {
+    color: var(--cor-destaque-secundario);
+    padding-top: 24px;
+    line-height: 19.2px;
+    font-weight: 400;
+}
+
+.rodape__titulo {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.rodape__lista {
+    list-style: none;
+    padding-top: 8px;
+}
+
+.rodape__lista li {
+    padding-top: 8px;
+}
+
+.rodape__lista a {
+    text-decoration: none;
+    color: var(--cor-texto)
+}
+
+.pagamentos {
+    display: inline-grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 16px;
+}
+
+.redes-sociais {
+    display: inline-grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+}
+
+@media screen and (max-width: 1280px) {
+    .rodape__linha:first-child {
+        display: grid;
+        grid-template-areas: 
+        "logo logo logo"
+        "funcionamento institucional informacoes";
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+    }
+
+    .rodape__logo {
+        grid-area: logo;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1.5px solid var(--cor-destaque-secundario);
+        text-align: center;
+    }
+
+    .rodape__funcionamento {
+        grid-area: funcionamento;
+    }
+
+    .rodape__institucional {
+        grid-area: institucional;
+    }
+
+    .rodape__informacoes {
+        grid-area: informacoes;
+    }
+
+    .rodape__linha:last-child {
+        padding-top: 0;
+        border-top: none;
+    }
+}
