@@ -54,32 +54,57 @@
     height: 331px;
     width: 100%;
     object-fit: contain;
-    padding: 24px;
 }
 
 .roupas {
     grid-area: roupas;
 }
 
+.categorias__roupas {
+    padding: 0 10% 0 10%;
+    object-position: top !important;
+    object-fit: cover !important;
+}
+
 .decoracao {
     grid-area: decoracao;
 }
 
-.canecaw {
+.categorias__decoracao {
+    padding: 5% 15% 5% 0;
+}
+
+.canecas {
     grid-area: canecas;
+}
+
+.categorias__canecas {
+    padding: 10% 0 10% 10%;
 }
 
 .acessorios {
     grid-area: acessorios;
 }
 
-@media screen and (max-width: 1024px) {
+.categorias__acessorios {
+    padding: 5%;
+}
+
+@media screen and (max-width: 1200px) {
     .categorias {
         padding: 80px 5%;
     }
 
     .categorias__titulo {
         font-size: 31px;
+    }
+
+    .categorias__roupas {
+        padding: 10% 0 0 0;
+    }
+
+    .categorias__decoracao {
+        padding: 10% 5% 10% 0;
     }
 }
 
@@ -104,5 +129,15 @@
     .categorias__list_item p {
         margin-bottom: 24px;
         font-size: 25px;
+    }
+
+    .categorias__roupas {
+        padding: 0 0;
+        object-position: center !important;
+        object-fit: contain !important;
+    }
+
+    .categorias__decoracao {
+        padding: 0 5% 0 0;
     }
 }
