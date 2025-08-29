@@ -66,7 +66,7 @@
 }
 
 .contato__container button:hover {
-    opacity: 80%;
+    background-color: var(--cor-fundo-botao-pressionado);
 }
 
 @media screen and (max-width: 1320px) {

@@ -15,6 +15,7 @@
     --cor-destaque-principal: #FF55DF;
     --cor-destaque-secundario: #8FFF24;
     --cor-fundo-botao: #780BF7;
+    --cor-fundo-botao-pressionado: #780BF780;
     --cor-de-fundo: #FFFFFF;
     --cor-hover: rgba(0, 0, 0, 0.10);
 }

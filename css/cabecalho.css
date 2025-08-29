@@ -48,12 +48,12 @@
     display: none;
 }
 
-.cabecalho__sobre_nos, .cabecalho__login, .cabecalho__perfil, .cabecalho__carrinho {
+.cabecalho__link, .cabecalho__icone img {
     padding: 0.5rem 0.75rem;
     border-radius: 1rem;
 }
 
-.cabecalho__sobre_nos:hover, .cabecalho__login:hover, .cabecalho__perfil:hover, .cabecalho__carrinho:hover {
+.cabecalho__link:hover, .cabecalho__icone img:hover {
     background-color: var(--cor-hover);
 }
 
