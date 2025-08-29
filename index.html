@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UseDev</title>
+    <link rel="icon" type="image/png" href="./assets/icons/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,7 +47,11 @@
     </header>
     <main>
         <section class="banner">
-            <img src="./assets/banner.png" alt="Pessoa usando uma camiseta da UseDev">
+            <picture>
+                <source srcset="./assets/banner_mobile.png" media="(max-width: 580px)">
+                <source srcset="./assets/banner.png" media="(min-width: 601px)">
+                <img src="./assets/banner.png" alt="Pessoa usando uma camiseta da UseDev">
+            </picture>
             <div class="banner__container">
                 <h2>Hora de abraçar seu <span>lado geek!</span></h2>
                 <button>Veja as novidades!</button>

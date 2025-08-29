@@ -18,7 +18,7 @@
     font-size: 76px;
     font-weight: 800;
     color: var(--cor-destaque-principal);
-    line-height: 91.2px;
+    line-height: 120%;
     padding-bottom: 48px;
     max-width: 80%;
 }
@@ -40,8 +40,13 @@
     cursor: pointer;
 }
 
+.banner__container button:hover {
+    opacity: 80%;
+}
+
 @media screen and (max-width: 1280px) {
     .banner {
+        padding: 80px 4%;
         grid-template-columns: 1fr;
         text-align: center;
         gap: 40px
@@ -49,5 +54,19 @@
 
     .banner__container h2 {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .banner {
+        padding: 32px 4%;
+    }
+
+    .banner__container h2 {
+        font-size: 48px;
+    }
+
+    .banner__container button {
+        width: 90%;
     }
 }

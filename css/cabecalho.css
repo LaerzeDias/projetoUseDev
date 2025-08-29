@@ -48,6 +48,15 @@
     display: none;
 }
 
+.cabecalho__sobre_nos, .cabecalho__login, .cabecalho__perfil, .cabecalho__carrinho {
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.cabecalho__sobre_nos:hover, .cabecalho__login:hover, .cabecalho__perfil:hover, .cabecalho__carrinho:hover {
+    background-color: var(--cor-hover);
+}
+
 @media screen and (max-width: 1024px) {
     .cabecalho__nav_list {
         grid-template-areas: 
@@ -86,6 +95,10 @@
 }
 
 @media screen and (max-width: 580px) {
+    .cabecalho {
+        padding: 24px 5%;
+    }
+
     .cabecalho__nav_list {
         grid-template-areas: 
         "menu logo perfil carrinho"

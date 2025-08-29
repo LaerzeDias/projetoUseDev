@@ -48,6 +48,10 @@
     color: var(--cor-texto)
 }
 
+.rodape__lista a:hover {
+    text-decoration: underline;
+}
+
 .pagamentos {
     display: inline-grid;
     grid-template-columns: repeat(5, auto);
@@ -93,5 +97,29 @@
     .rodape__linha:last-child {
         padding-top: 0;
         border-top: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .rodape__linha:first-child {
+        display: inline;
+        margin-bottom: 8px;
+    }
+
+    .rodape__linha:first-child div {
+        margin-bottom: 24px;
+    }
+
+    .rodape__logo {
+        padding-bottom: 32px;
+        margin-bottom: 32px !important;
+    }
+
+    .rodape__linha:last-child {
+        display: inline;
+    }
+
+    .rodape__linha:last-child div {
+        margin-top: 32px;
     }
 }

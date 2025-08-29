@@ -11,15 +11,12 @@
     --cor-texto: #EFEFEF;
     --fonte-texto: "Poppins", sans-serif;
     --fonte-titulo: "Orbitron", sans-serif;
-
     --cor-links: #090129;
-
     --cor-destaque-principal: #FF55DF;
     --cor-destaque-secundario: #8FFF24;
-
     --cor-fundo-botao: #780BF7;
-
     --cor-de-fundo: #FFFFFF;
+    --cor-hover: rgba(0, 0, 0, 0.10);
 }
 
 

@@ -48,7 +48,6 @@
     font-size: 20px;
     font-weight: 400;
     font-family: var(--fonte-texto);
-    color: var(--cor-texto-principal);
     line-height: 24px;
 }
 
@@ -66,6 +65,10 @@
     cursor: pointer;
 }
 
+.contato__container button:hover {
+    opacity: 80%;
+}
+
 @media screen and (max-width: 1320px) {
     .contato__container {
         display: inline;
@@ -73,5 +76,28 @@
 
     #email {
         margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .contato {
+        padding: 40px 5%;
+    }
+
+    .contato__titulo {
+        font-size: 20px;
+    }
+
+    .contato__texto {
+        font-size: 16px;
+        padding: 16px 0 24px;
+    }
+
+    #email {
+        font-size: 14px;
+    }
+
+    #email::placeholder {
+        font-size: 14px;
     }
 }
