@@ -44,6 +44,10 @@
     width: 24px;
 }
 
+.cabecalho__menu {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .cabecalho__nav_list {
         grid-template-areas: 
@@ -78,5 +82,30 @@
 
     .cabecalho__input {
         grid-area: input;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .cabecalho__nav_list {
+        grid-template-areas: 
+        "menu logo perfil carrinho"
+        "input input input input";
+        grid-template-columns: .5fr 1fr .5fr .5fr;
+    }
+
+    .cabecalho__logo {
+        justify-self: center;
+    }
+
+    .cabecalho__menu {
+        display: block;
+    }
+
+    .cabecalho__menu button {
+        border: none;
+    }
+
+    .cabecalho__login, .cabecalho__sobre_nos {
+        display: none;
     }
 }
